@@ -15,18 +15,18 @@ SECTIONS
 
     .text : 
     {
-        .=ALIGN(4):
+        .=ALIGN(4);
 
         *(.text)
         *(.rodata)
 
-        .ALIGN(4):
+        .ALIGN(4);
         _etext = .;
     } >FLASH
 
     .data :
     {
-        . = ALIGN(4):
+        . = ALIGN(4);
         _sdata = .;
 
         *(.data)
@@ -35,5 +35,14 @@ SECTIONS
         _edata = .;
     } >SRAM AT > FLASH
 
-    
+    .bss :
+    {
+        . = ALIGN(4);
+        _sbss = .;
+
+        *(.bss)
+
+        . = ALIGN(4);
+        _ebss = .;
+    } >SRAM
 }
