@@ -24,5 +24,16 @@ SECTIONS
         _etext = .;
     } >FLASH
 
+    .data :
+    {
+        . = ALIGN(4):
+        _sdata = .;
+
+        *(.data)
+
+        . = ALIGN(4);
+        _edata = .;
+    } >SRAM AT > FLASH
+
     
 }
