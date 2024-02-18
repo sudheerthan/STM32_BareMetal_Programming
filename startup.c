@@ -1,10 +1,10 @@
 #include <stdint.h>
 
 #define SRAM_START (0x20000000U)
-#define SRAM_SIZE (32U * 1024U)
+#define SRAM_SIZE (20U * 1024U)
 #define SRAM_END (SRAM_START + SRAM_SIZE)
 #define STACK_POINTER_INIT_ADDRESS (SRAM_END)
-#define ISR_VECTOR_SIZE_WORDS 114
+#define ISR_VECTOR_SIZE_WORDS 83
 
 void reset_handler(void);
 void default_handler(void);
