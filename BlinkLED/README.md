@@ -58,7 +58,7 @@ To capture a picture of the LED output:
 2. **Run the Program**: Power on the board and observe the LED blinking.
 3. **Capture Picture**: Use a camera or smartphone to capture a picture of the LED output.
 
-You can include the captured picture in the README to showcase the project's functionality.
+![LED Output](blinkled.gif)
 
 ## Contributing
 
