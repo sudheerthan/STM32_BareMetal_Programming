@@ -56,7 +56,6 @@ To capture a picture of the LED output:
 
 1. **Prepare the Setup**: Set up your STM32F103 board with the LED connected to pin PC13.
 2. **Run the Program**: Power on the board and observe the LED blinking.
-3. **Capture Picture**: Use a camera or smartphone to capture a picture of the LED output.
 
 ![LED Output](blinkled.gif)
 
